@@ -183,3 +183,6 @@
 #     print("Adding extra cheese.")
 
 # print("\nFinished making your pizza.")
+
+
+# Використання if у поєднанні зі списками
