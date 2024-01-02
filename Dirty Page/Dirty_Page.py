@@ -237,3 +237,65 @@
 # print("\nFinished making your pizza.")
 
 
+# Dictionary. hard for me too
+
+# alien_0 = {"color": "green", "points": 5}
+
+# print(alien_0["color"])
+# print(alien_0["points"])
+
+
+# alien_0 = {"color": "green"}
+# print(alien_0["color"])
+
+
+# alien_0 = {"color": "green", "points": 5}
+
+# new_points = alien_0["points"]
+# print(f"You just earned {new_points} points !")
+
+# PAGE 1 HUNDRED !!!! Congradulation !!!!!!!!
+
+# alien_0 = {"color": "green", "points": 5}
+# print(alien_0)
+
+# alien_0["x_position"] = 0
+# alien_0["y_position"] = 25
+
+# print(alien_0)
+
+
+# alien_0 = {}
+
+# alien_0["color"] = "green"
+# alien_0["points"] = 5
+
+# print(alien_0)
+
+
+# alien_0 = {"color": "green"}
+# print(f"The alien is {alien_0['color']}")
+
+# alien_0["color"] = "yelow"
+# print(f"the alien is now {alien_0['color']}")
+
+
+alien_0 = {"x_position": 0, "y_position": 25, "speed": "medium"}
+print(f"Original position: {alien_0['x_position']}")
+
+# Зсунути прибульця праворуч.
+# Визначити, як далеко зсунути прибульця,
+# зважаючи на його поточну швидкість.
+
+if alien_0["speed"] == "slow":
+    x_increment = 1
+elif alien_0["speed"] == "medium":
+    x_increment = 2
+else:
+    # Це швидкий прибулець
+    x_increment = 3
+
+# Нове розташування - - це старе розташування плюс зміщення.
+alien_0["x_position"] = alien_0["x_position"] + x_increment
+
+print(f"New position: {alien_0['x_position']}")
