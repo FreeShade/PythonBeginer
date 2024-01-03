@@ -317,9 +317,71 @@
 # print(f"Sarah`s favorite language is {language}.")
 
 
-alien_0 = {
-    "color": "green",
-    "speed": "slow",
+# alien_0 = {
+#     "color": "green",
+#     "speed": "slow",
+# }
+# point_value = alien_0.get("points", "No point value assigned.")
+# print(point_value)
+
+
+# Cycle over dictionary
+
+
+# user_0 = {
+#     "username": "efermi",
+#     "first": "enrico",
+#     "last": "fermi",
+# }
+
+# for key, value in user_0.items():
+#     print(f"\nKey : {key}")
+#     print(f"Value : {value}")
+
+
+# favorite_languages = {
+#     "jen": "python",
+#     "sarah": "c",
+#     "edward": "ruby",
+#     "phil": "python",
+# }
+
+# for name, language in favorite_languages.items():
+#     print(f"\n{name.title()}`s favorite language is {language.title()}.")
+
+
+# favorite_languages = {
+#     "jen": "python",
+#     "sarah": "c",
+#     "edward": "ruby",
+#     "phil": "python",
+# }
+
+# Перебір ключів в словнику.
+# for name in favorite_language: нічим не відрізняється
+# for name in favorite_languages.keys():
+#    print(name.title())
+
+
+favorite_languages = {
+    "jen": "python",
+    "sarah": "c",
+    "edward": "ruby",
+    "phil": "python",
 }
-point_value = alien_0.get("points", "No point value assigned.")
-print(point_value)
+
+friends = ["phil", "sarah"]
+for name in favorite_languages:
+    print(f"Hi {name.title()}")
+
+    if name in friends:
+        language = favorite_languages[name].title()
+        print(f"\t{name.title()}, I soo you love {language}!")
+
+
+favorite_languages = {
+    "jen": "python",
+    "sarah": "c",
+    "edward": "ruby",
+    "phil": "python",
+}
