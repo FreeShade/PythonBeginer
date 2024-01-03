@@ -388,3 +388,42 @@
 
 # if "erin" not in favorite_languages:
 #     print("Erin, please take our poll!")
+
+
+# favorite_languages = {
+#     "jen": "python",
+#     "sarah": "c",
+#     "edward": "ruby",
+#     "phil": "python",
+# }
+# Відсортувати ключі , зручно і перспективно.
+
+# for name in sorted(favorite_languages.keys()):
+#     print(f"{name.title()}, thank you for taking the poll.")
+
+# favorite_languages = {
+#     "jen": "python",
+#     "sarah": "c",
+#     "edward": "ruby",
+#     "phil": "python",
+# }
+
+# print("The following languages have been mentioned: ")
+# for language in favorite_languages.values():
+#     print(language.title())
+
+
+# favorite_languages = {
+#     "jen": "python",
+#     "sarah": "c",
+#     "edward": "ruby",
+#     "phil": "python",
+# }
+# #використання set щоб прибрати повторювані пункти.
+# print("The following languages have been mentioned: ")
+# for language in set(favorite_languages.values()):
+#     print(language.title())
+
+# Множини
+# languages = {"python", "ruby", "python", "c"}
+# print(languages)
