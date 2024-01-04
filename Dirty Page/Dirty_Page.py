@@ -427,3 +427,6 @@
 # Множини
 # languages = {"python", "ruby", "python", "c"}
 # print(languages)
+
+
+# Вкладання в пітон(і)
