@@ -23,5 +23,6 @@ favorite_languages = {
 for name in those_who_vote:
     if name in favorite_languages.keys():
         print(f"{name.title()} thanks for your vote.")
-    else:
+    elif name not in favorite_languages:
+        # else:
         print(f"{name.title()} please chose you language.")
