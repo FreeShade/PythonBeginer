@@ -460,25 +460,48 @@
 # print(f"Total number of aliens: {len(aliens)}")
 
 
-# створити порожній список
-aliens = []
+# # створити порожній список
+# aliens = []
 
-# Cтворити 30 зелених прибульців.
-for alien_number in range(30):
-    new_alien = {"color": "green", "points": 5, "speed": "slow"}
-    aliens.append(new_alien)
+# # Cтворити 30 зелених прибульців.
+# for alien_number in range(30):
+#     new_alien = {"color": "green", "points": 5, "speed": "slow"}
+#     aliens.append(new_alien)
 
-for alien in aliens[:3]:
-    if alien["color"] == "green":
-        alien["color"] = "yelow"
-        alien["speed"] = "medium"
-        alien["points"] = 10
-    elif alien["color"] == "yelow":
-        alien["color"] = "red"
-        alien["speed"] = "fast"
-        alien["points"] = 15
-# показати перших 5 прибульців.
+# for alien in aliens[:3]:
+#     if alien["color"] == "green":
+#         alien["color"] = "yelow"
+#         alien["speed"] = "medium"
+#         alien["points"] = 10
+#     elif alien["color"] == "yelow":
+#         alien["color"] = "red"
+#         alien["speed"] = "fast"
+#         alien["points"] = 15
+# # показати перших 5 прибульців.
 
-for alien in aliens[:3]:
-    print(alien)
-print("...")
+# for alien in aliens[:3]:
+#     print(alien)
+# print("...")
+
+
+# Зберегти інформацію про замовлення
+
+# pizza = {"crust": "thick", "toppings": ["mushrooms", "extra cheese"]}
+
+# # Підсумувати замовлення
+# print(f"You ordered a {pizza['crust']} - crust pizza." "with the following topings: ")
+# for topping in pizza["toppings"]:
+#     print("\t" + topping.title())
+
+
+# favorite_languages = {
+#     "jen": ["python", "ruby"],
+#     "sarah": ["c"],
+#     "edward": ["ruby", "go"],
+#     "phil": ["python", "haskell"],
+# }
+
+# for name, languages in favorite_languages.items():
+#     print(f"\n{name.title()}`s favorite language are:")
+#     for language in languages:
+#         print(f"\t{language.title()}")
