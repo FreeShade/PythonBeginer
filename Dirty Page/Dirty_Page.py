@@ -526,9 +526,3 @@
 
 #     print(f"\tFull name: {full_name.title()}")
 #     print(f"\tLocation: {location.title()}")
-
-current_number = 0
-
-while current_number <= 5:
-    print(current_number)
-    current_number += 1
