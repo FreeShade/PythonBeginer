@@ -34,4 +34,4 @@ for city, city_info in cities.items():
         print(f"\t{city_in.title()} : {value.title()}")
 
 
-# print(cities)
+# додати нові сукції в список я не знаю як поліпшити , мені вже подобається вивід.
