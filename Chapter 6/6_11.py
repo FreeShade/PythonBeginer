@@ -21,7 +21,7 @@ cities = {
 for city, city_info in cities.items():
     print(f"{city.title()}:")
     for city_in, value in city_info.items():
-        print(f"\t{city_in.title()} : {value}")
+        print(f"\t{city_in.title()} : {value.title()}")
 
 
 # print(cities)
