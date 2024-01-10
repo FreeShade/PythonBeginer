@@ -547,3 +547,6 @@
 # name = input(promt)
 
 # print(f"\nHello, {name} !")
+
+age = input("How old are you? ")
+print(type(age))
