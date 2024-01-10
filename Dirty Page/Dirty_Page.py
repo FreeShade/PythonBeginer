@@ -548,5 +548,17 @@
 
 # print(f"\nHello, {name} !")
 
+# age = input("How old are you? ")
+# print(type(age))
+
+
+# age = input("How old are you? ")
+# age >= 18
+# print(age)
+
+
 age = input("How old are you? ")
+
+age = int(age)
+age >= 18
 print(type(age))
