@@ -557,8 +557,19 @@
 # print(age)
 
 
-age = input("How old are you? ")
+# age = input("How old are you? ")
 
-age = int(age)
-age >= 18
-print(type(age))
+# age = int(age)
+# age >= 18
+# print(type(age))
+
+
+height = input("How tall are you, in inches? ")
+height = int(height)
+
+if height >= 48:
+    print("\nYou're tall enough to ride !\n")
+else:
+    print("\n-------------------------------------------------")
+    print("You'll be able to ride when you're a little older.")
+    print("-------------------------------------------------\n")
