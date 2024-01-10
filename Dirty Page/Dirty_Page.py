@@ -541,9 +541,9 @@
 # print(f"\nHello, {name}!")
 
 
-promt = "If you tell us who are, we can personalize the messages you see."
-promt += "\nWhat is your first name ? "
+# promt = "If you tell us who are, we can personalize the messages you see."
+# promt += "\nWhat is your first name ? "
 
-name = input(promt)
+# name = input(promt)
 
-print(f"\nHello, {name} !")
+# print(f"\nHello, {name} !")
