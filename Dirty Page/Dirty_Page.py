@@ -573,3 +573,90 @@
 #     print("\n-------------------------------------------------")
 #     print("You'll be able to ride when you're a little older.")
 #     print("-------------------------------------------------\n")
+
+
+# Оператор остачі
+
+# number = input("Enter a number, and I`ll tell you if it`s even or odd: ")
+# number = int(number)
+
+# if number % 2 == 0:
+#     print(f"\nThe number {number} is even.")
+# else:
+#     print(f"\nThe number {number} is odd.")
+
+
+# Далі цикл while.
+
+# curent_number = 1
+
+# while curent_number <= 5:
+#     print(curent_number)
+#     curent_number += 1
+
+
+# promt = "\nTell me something, and I will repeat it back to you: "
+# promt += "\nEnter 'quit' to end the program. "
+# message = None
+# while True:
+#     if message == "quit":
+#         print("Bye!")
+#         break
+#     else:
+#         message = input(promt)
+#         print(message)
+#
+
+# promt = "\nTell me something, and I will repeat it back to you: "
+# promt += "\nEnter 'quit' to end the program. "
+
+# message = None
+
+# while message != "quit":
+#     message = input(promt)
+
+#     if message != "quit":
+#         print(message)
+
+
+# promt = "\nTell me something, and I will repeat it back to you: "
+# promt += "\nEnter 'quit' to end the program. "
+
+# active = True
+# while active:
+#     message = input(promt)
+
+#     if message == "quit":
+#         active = False
+
+#     else:
+#         print(message)
+
+
+# promt = "\nTell me something, and I will repeat it back to you: "
+# promt += "\nEnter 'quit' to end the program. "
+
+
+# while True:
+#     city = input(promt)
+
+#     if city == "quit":
+#         break
+#     else:
+#         print(f"I`d like to go to {city.title()}")
+
+
+# current_number = 0
+# while current_number < 10:
+#     current_number += 1
+#     if current_number % 2 == 0:
+#         continue
+
+#     print(current_number)
+
+
+# Нескінченні цикли :
+
+# x = 1
+# while x <= 5:
+#     print(x)
