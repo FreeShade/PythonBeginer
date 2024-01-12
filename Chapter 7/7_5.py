@@ -24,4 +24,5 @@ while active_status == True:
         elif customer_age >= 12:
             tiket_price = 15
             print(f"Your tiket cost will be {tiket_price} $.")
+
 # тепер працює як я хотів
