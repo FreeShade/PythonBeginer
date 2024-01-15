@@ -4,7 +4,7 @@ active_status = True
 
 # Напишемо if-else для квитків і цін
 # огорнемо це все циклом while
-while active_status == True:
+while active_status:
     customer_age = input("Please tell your age: ")
 
     if customer_age == "quit":
