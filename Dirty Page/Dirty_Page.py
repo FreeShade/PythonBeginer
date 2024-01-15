@@ -693,27 +693,45 @@
 # print(pets)
 
 
-responses = {}
+# responses = {}
 
-# Вставити булеву змінну у значення, що показує: опитування в процесі.
+# # Вставити булеву змінну у значення, що показує: опитування в процесі.
 
-polling_active = True
+# polling_active = True
 
-while polling_active:
-    # Спитати ім'я людини та її відповідь.
-    name = input("\nWhat is your name ? ")
-    response = input("Which mountain would you like to climb someday? ")
+# while polling_active:
+#     # Спитати ім'я людини та її відповідь.
+#     name = input("\nWhat is your name ? ")
+#     response = input("Which mountain would you like to climb someday? ")
 
-    # Зберегти відповідь у словник.
-    responses[name] = response
+#     # Зберегти відповідь у словник.
+#     responses[name] = response
 
-    # Дізнатись чи ще хтось буде проходити опитування.
-    repeat = input("Would you like to let another persone respond? (yes/no) ")
+#     # Дізнатись чи ще хтось буде проходити опитування.
+#     repeat = input("Would you like to let another persone respond? (yes/no) ")
 
-    if repeat == "no":
-        polling_active = False
+#     if repeat == "no":
+#         polling_active = False
 
-# Опитування завершене. Показати результат.
-print("\n--- Poll Results ---")
-for name, response in responses.items():
-    print(f"{name.title()} would like to climb {response}.")
+# # Опитування завершене. Показати результат.
+# print("\n--- Poll Results ---")
+# for name, response in responses.items():
+#     print(f"{name.title()} would like to climb {response}.")
+
+
+# Функції , все стає складніше , я вже бувало продовбувався з ними, дуже складно, але ефективно
+
+
+# def greet_user():
+#     """Показати просте вітання."""
+# #     print("Hello!")
+
+# # greet_user()
+
+
+# def greet_user(user_name):
+#     """Показати просте вітання."""
+#     print(f"Hello, {user_name.title()}!")
+
+
+# greet_user(input("Something: "))
