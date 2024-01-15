@@ -682,12 +682,38 @@
 #     print(confirmed_user.title())
 
 
-# remove зі списку, циклом while
+# # remove зі списку, циклом while
 
-pets = ["dog", "cat", "goldfish", "cat", "rebbit", "cat"]
-print(pets)
+# pets = ["dog", "cat", "goldfish", "cat", "rebbit", "cat"]
+# print(pets)
 
-while "cat" in pets:
-    pets.remove("cat")
+# while "cat" in pets:
+#     pets.remove("cat")
 
-print(pets)
+# print(pets)
+
+
+responses = {}
+
+# Вставити булеву змінну у значення, що показує: опитування в процесі.
+
+polling_active = True
+
+while polling_active:
+    # Спитати ім'я людини та її відповідь.
+    name = input("\nWhat is your name ? ")
+    response = input("Which mountain would you like to climb someday? ")
+
+    # Зберегти відповідь у словник.
+    responses[name] = response
+
+    # Дізнатись чи ще хтось буде проходити опитування.
+    repeat = input("Would you like to let another persone respond? (yes/no) ")
+
+    if repeat == "no":
+        polling_active = False
+
+# Опитування завершене. Показати результат.
+print("\n--- Poll Results ---")
+for name, response in responses.items():
+    print(f"{name.title()} would like to climb {response}.")
