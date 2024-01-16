@@ -1,4 +1,4 @@
-# players = ["charles", "martina", " michael", "florence", "eli"]
+грудня о# players = ["charles", "martina", " michael", "florence", "eli"]
 # print(players[0:3])
 # print(players[1:4])
 # print(players[:4])
@@ -717,3 +717,7 @@ while polling_active:
 print("\n--- Poll Results ---")
 for name, response in responses.items():
     print(f"{name.title()} would like to climb {response}.")
+
+
+
+#some ne text to chek comits 
