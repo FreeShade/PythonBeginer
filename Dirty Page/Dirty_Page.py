@@ -713,6 +713,7 @@
 #     if repeat == "no":
 #         polling_active = False
 
+
 # # Опитування завершене. Показати результат.
 # print("\n--- Poll Results ---")
 # for name, response in responses.items():
@@ -735,3 +736,11 @@
 
 
 # greet_user(input("Something: "))
+
+# Опитування завершене. Показати результат.
+# print("\n--- Poll Results ---")
+# for name, response in responses.items():
+#     print(f"{name.title()} would like to climb {response}.")
+
+
+# some ne text to chek comits
