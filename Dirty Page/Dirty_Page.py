@@ -754,3 +754,4 @@ def describe_pet(animal_type, pet_name):
 
 describe_pet("humster", "harry")
 describe_pet("dog", "willie")
+describe_pet(pet_name="yumi", animal_type="cat")
