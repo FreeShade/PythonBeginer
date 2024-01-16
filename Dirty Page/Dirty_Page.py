@@ -746,12 +746,26 @@
 # some ne text to chek comits
 
 
-def describe_pet(animal_type, pet_name):
+# def describe_pet(animal_type, pet_name):
+#     """Показати інформацію про домашнього улюбленця."""
+#     print(f"\nI have a {animal_type}.")
+#     print(f"My {animal_type}`s name is {pet_name.title()}.")
+
+
+# describe_pet("humster", "harry")
+# describe_pet("dog", "willie")
+# describe_pet(pet_name="yumi", animal_type="cat")
+
+
+def describe_pet(pet_name, animal_type="dog"):
     """Показати інформацію про домашнього улюбленця."""
     print(f"\nI have a {animal_type}.")
     print(f"My {animal_type}`s name is {pet_name.title()}.")
 
 
-describe_pet("humster", "harry")
-describe_pet("dog", "willie")
-describe_pet(pet_name="yumi", animal_type="cat")
+# Both variants are same:
+describe_pet(pet_name="willie")
+describe_pet("willie")
+
+# no I change animal type in function
+describe_pet(pet_name="willie", animal_type="cat")
