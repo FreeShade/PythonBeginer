@@ -880,4 +880,15 @@
 #     print(f"\nHello, {formatted_name}!")
 
 
-# Продовження
+# Продовження Передавання списку
+
+
+def greet_users(names):
+    """Вивести просте повідомлення для кожного користувача у списку."""
+    for name in names:
+        message = f"Hello, {name.title()}!"
+        print(message)
+
+
+usernames = ["hennah", "ty", "margot"]
+greet_users(usernames)
