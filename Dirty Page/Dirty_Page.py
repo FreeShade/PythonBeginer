@@ -883,12 +883,31 @@
 # Продовження Передавання списку
 
 
-def greet_users(names):
-    """Вивести просте повідомлення для кожного користувача у списку."""
-    for name in names:
-        message = f"Hello, {name.title()}!"
-        print(message)
+# def greet_users(names):
+#     """Вивести просте повідомлення для кожного користувача у списку."""
+#     for name in names:
+#         message = f"Hello, {name.title()}!"
+#         print(message)
 
 
-usernames = ["hennah", "ty", "margot"]
-greet_users(usernames)
+# usernames = ["hennah", "ty", "margot"]
+# greet_users(usernames)
+
+
+# Редагування списку всередині функції
+
+# Почати з креслень, які треба роздрукувати.
+unprinted_designs = ["phone case", "robot pendant", "dodecahedron"]
+completed_models = []
+
+# Симулювати друк кожного креслення, доки всі не закінчаться.
+# Перенести кожен малюнок до completed_models після друку.
+while unprinted_designs:
+    current_designs = unprinted_designs.pop()
+    print(f"Printing model: {current_designs}")
+    completed_models.append(current_designs)
+
+# Показати всі готові моделі.
+print("\nThe following models have been printed:")
+for completed_model in completed_models:
+    print(completed_model)
