@@ -13,6 +13,7 @@ def make_album(musician_name, album_name):
 #     """Return a dictionary with information about an album."""
 #     album_info = {"musician_name": musician_name, "album_name": album_name}
 #     return album_info
+
 # Its wariant of chat GPT code above, at least I`ll whrite all code by myself
 
 while True:
