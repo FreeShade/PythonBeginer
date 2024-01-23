@@ -945,3 +945,12 @@
 # як , як , копіювати замість зміни, список в функції заміни зміну на копію і бек ап залишиться
 
 # Передання довільної кількості аргументів
+
+
+def make_pizza(*toppings):
+    """Склісти список замовлених інгредієнтів."""
+    print(toppings)
+
+
+make_pizza("pepperoni")
+make_pizza("mushroom", "green pepers", "extra cheese")
