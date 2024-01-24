@@ -986,19 +986,29 @@
 # Довільні ключові аргументи **kwargs
 
 
-def build_profile(first, last, **user_info):
-    """Створити словник, що міститиме всю інформацію про користувача."""
-    user_info["first_name"] = first
-    user_info["last_name"] = last
-    return user_info
+# def build_profile(first, last, **user_info):
+#     """Створити словник, що міститиме всю інформацію про користувача."""
+#     user_info["first_name"] = first
+#     user_info["last_name"] = last
+#     return user_info
 
 
-user_profile = build_profile(
-    "albert", "einstein", location="princeton", field="physics"
-)
+# user_profile = build_profile(
+#     "albert", "einstein", location="princeton", field="physics"
+# )
 
-print(user_profile)
+# print(user_profile)
 
 # **kwargs - набір неописаних ключових аргументів.
 
-# Зберігання функції у модулі, продовже завтра, або ввечорі.
+# Зберігання функції у модулі, продовжу завтра, або ввечорі.
+# імпорт в цій же папці, але іншими файлами.
+
+
+# Можна імпортувати окремі функції з модуля.
+# from module_name import function_name
+# або
+# from module_name import function_0, function_1, function_2
+
+
+# Ключове слово as: як дати функції псевдонім
