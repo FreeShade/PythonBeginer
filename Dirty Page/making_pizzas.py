@@ -1,11 +1,19 @@
-from pizza import make_pizza
+from pizza import make_pizza as mp
 
+# from pizza import make_pizza
 # import pizza
-# #обидва варіанти валідні
+# #варіанти вище валідні
+
+
 # pizza.make_pizza(16, "pepperoni")
 # pizza.make_pizza(12, "mushrooms", "green peppers", "extra cheese")
+# # module_name.function_name()
+
+# make_pizza(16, "pepperoni")
+# make_pizza(12, "mushrooms", "green peppers", "extra cheese")
+# # module_name.function_name()
 
 
-make_pizza(16, "pepperoni")
-make_pizza(12, "mushrooms", "green peppers", "extra cheese")
-# module_name.function_name()
+mp(16, "pepperoni")
+mp(12, "mushrooms", "green peppers", "extra cheese")
+# загальний синтаксис для цього варіанту from module_name import function_name as fn
