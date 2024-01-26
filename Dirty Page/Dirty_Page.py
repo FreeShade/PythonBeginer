@@ -1015,3 +1015,22 @@
 
 
 # Далі класи... Пиздець.
+# Ну і об'єктно орієнтовне програмування
+
+
+# Песик
+class Dog:
+    """Проста спроба змоделювати собаку."""
+
+    def __init__(self, name, age):
+        """Ініціювати атрибути"""
+        self.name = name
+        self.age = age
+
+    def sit(self):
+        """Симулювати виконання команди сидіти"""
+        print(f"{self.name} is now sitting.")
+
+    def roll_over(self):
+        """Cимулювати команду 'лежати'."""
+        print(f"{self.name} rolled over!")
