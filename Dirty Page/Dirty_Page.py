@@ -1018,41 +1018,44 @@
 # Ну і об'єктно орієнтовне програмування
 
 
-# Песик
-class Dog:
-    """Проста спроба змоделювати собаку."""
+# # Песик
+# class Dog:
+#     """Проста спроба змоделювати собаку."""
 
-    def __init__(self, name, age):
-        """Ініціювати атрибути"""
-        self.name = name
-        self.age = age
+#     def __init__(self, name, age):
+#         """Ініціювати атрибути"""
+#         self.name = name
+#         self.age = age
 
-    def sit(self):
-        """Симулювати виконання команди сидіти"""
-        print(f"{self.name} is now sitting.")
+#     def sit(self):
+#         """Симулювати виконання команди сидіти"""
+#         print(f"{self.name} is now sitting.")
 
-    def roll_over(self):
-        """Cимулювати команду 'лежати'."""
-        print(f"{self.name} rolled over!")
-
-
-# Створення екземпляру класу
-my_dog = Dog("Willie", 6)
-# Звернення до атрибутів
-print(f"My dog`s name is {my_dog.name}.")
-print(f"My dog is {my_dog.age} years age.")
-# Виклик методів
-my_dog.sit()
-my_dog.roll_over()
+#     def roll_over(self):
+#         """Cимулювати команду 'лежати'."""
+#         print(f"{self.name} rolled over!")
 
 
-# Створення багатьох екземплярів
-your_dog = Dog("Lucy", 3)
+# # Створення екземпляру класу
+# my_dog = Dog("Willie", 6)
+# # Звернення до атрибутів
+# print(f"My dog`s name is {my_dog.name}.")
+# print(f"My dog is {my_dog.age} years age.")
+# # Виклик методів
+# my_dog.sit()
+# my_dog.roll_over()
 
 
-print(f"\nYour dog`s name is {your_dog.name}")
-print(f"Your dog is {your_dog.age} years old.")
-your_dog.sit()
+# # Створення багатьох екземплярів
+# your_dog = Dog("Lucy", 3)
 
 
-print("This is a test commit")
+# print(f"\nYour dog`s name is {your_dog.name}")
+# print(f"Your dog is {your_dog.age} years old.")
+# your_dog.sit()
+
+
+# print("This is a test commit")
+
+
+# Робота з класами і екземплярами класів
