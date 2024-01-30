@@ -1059,3 +1059,22 @@
 
 
 # Робота з класами і екземплярами класів
+
+
+class Car:
+    """Проста спроба змоделювати машину."""
+
+    def __init__(self, make, model, year):
+        """Ініціалізувати атрибути, що описують машину."""
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def get_describptive_name(self):
+        """Повернути відформатоване змістовне ім'я."""
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()
+
+
+my_new_car = Car("audi", "a4", 2019)
+print(my_new_car.get_describptive_name())
