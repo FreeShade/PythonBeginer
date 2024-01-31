@@ -1180,39 +1180,42 @@
 # Збільшення атрибута у методі
 
 
-class Car:
-    """Проста спроба змоделювати машину."""
+# class Car:
+#     """Проста спроба змоделювати машину."""
 
-    def __init__(self, make, model, year):
-        """Ініціалізувати атрибути, що описують машину."""
-        self.make = make
-        self.model = model
-        self.year = year
-        self.odometer_reading = 0
+#     def __init__(self, make, model, year):
+#         """Ініціалізувати атрибути, що описують машину."""
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
 
-    def get_describptive_name(self):
-        """Повернути відформатоване змістовне ім'я."""
-        long_name = f"{self.year} {self.make} {self.model}"
-        return long_name.title()
+#     def get_describptive_name(self):
+#         """Повернути відформатоване змістовне ім'я."""
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
 
-    def read_odometer(self):
-        """Вивести повідомлення з пробігом машини"""
-        print(f"This car has {self.odometer_reading} miles on it.")
+#     def read_odometer(self):
+#         """Вивести повідомлення з пробігом машини"""
+#         print(f"This car has {self.odometer_reading} miles on it.")
 
-    def update_odometer(self, mileage):
-        """Задати значення одометра."""
-        self.odometer_reading = mileage
+#     def update_odometer(self, mileage):
+#         """Задати значення одометра."""
+#         self.odometer_reading = mileage
 
-    def increment_odometer(self, miles):
-        """Додати значення до показника одометра."""
-        self.odometer_reading += miles
+#     def increment_odometer(self, miles):
+#         """Додати значення до показника одометра."""
+#         self.odometer_reading += miles
 
 
-my_used_car = Car("subaru", "outback", 2015)
-print(my_used_car.get_describptive_name())
+# my_used_car = Car("subaru", "outback", 2015)
+# print(my_used_car.get_describptive_name())
 
-my_used_car.update_odometer(23_500)
-my_used_car.read_odometer()
+# my_used_car.update_odometer(23_500)
+# my_used_car.read_odometer()
 
-my_used_car.increment_odometer(100)
-my_used_car.read_odometer()
+# my_used_car.increment_odometer(100)
+# my_used_car.read_odometer()
+
+
+# Далі Успадкування класів
