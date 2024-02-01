@@ -1218,7 +1218,7 @@
 # my_used_car.read_odometer()
 
 
-# Далі Успадкування класів
+# # Далі Успадкування класів
 
 
 class Car:
@@ -1253,7 +1253,21 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         """Започаткувати атрибути батьківського класу."""
         super().__init__(make, model, year)
+        # Додаємо атрибут властивий тільки електрокарам.
+        self.battery_size = 75
+
+    def describe_battery(self):
+        """Вивести повідомлення про розмір акумулятора."""
+        print(f"This car has a {self.battery_size} - kWh battery.")
+
+        # Перевизначення методів батьківського класу
+
+    def fill_gas_tank(self):
+        """Електрокари не мають бензобаків!"""
+        print("This car dosen`t need a gas tank!")
 
 
 my_tesla = ElectricCar("tesla", "model s", 2019)
 print(my_tesla.get_descriptive_name())
+my_tesla.describe_battery()
+# my_tesla.fill_gas_tank()
