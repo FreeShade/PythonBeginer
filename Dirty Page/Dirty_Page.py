@@ -1247,20 +1247,48 @@ class Car:
         self.odometer_reading += miles
 
 
-class ElectricCar(Car):
-    """Змоделювати властивості, притаманні електрокарам."""
+# Екземпляри як атрибути.
+class Battery:
+    """Проста спроба змоделювати акумулятор електрокара."""
 
-    def __init__(self, make, model, year):
-        """Започаткувати атрибути батьківського класу."""
-        super().__init__(make, model, year)
-        # Додаємо атрибут властивий тільки електрокарам.
-        self.battery_size = 75
+    def __init__(self, battery_size=75):
+        """Ініціалізувати атрибути акумулятора."""
+        self.battery_size = battery_size
 
     def describe_battery(self):
         """Вивести повідомлення про розмір акумулятора."""
         print(f"This car has a {self.battery_size} - kWh battery.")
 
-        # Перевизначення методів батьківського класу
+    def get_range(self):
+        """
+        Вивести повідомлення про відстань,
+        яку можее подолати авто відповідно
+        до ємності акумулятора.
+        """
+        if self.battery_size == 75:
+            range = 260
+        elif self.battery_size == 100:
+            range = 315
+
+        print(f"This car can go about {range} miles on a full charge.")
+
+
+class ElectricCar(Car):
+    """Змоделювати властивості, притаманні електрокарам."""
+
+    # Визначення атрибутів і методів породженого класу.
+    def __init__(self, make, model, year):
+        """Започаткувати атрибути батьківського класу."""
+        super().__init__(make, model, year)
+        # Додаємо атрибут властивий тільки електрокарам.
+        # self.battery_size = 75
+        self.battery = Battery()
+
+    # def describe_battery(self):
+    #     """Вивести повідомлення про розмір акумулятора."""
+    #     print(f"This car has a {self.battery_size} - kWh battery.")
+
+    #     # Перевизначення методів батьківського класу
 
     def fill_gas_tank(self):
         """Електрокари не мають бензобаків!"""
@@ -1269,5 +1297,8 @@ class ElectricCar(Car):
 
 my_tesla = ElectricCar("tesla", "model s", 2019)
 print(my_tesla.get_descriptive_name())
-my_tesla.describe_battery()
-# my_tesla.fill_gas_tank()
+# my_tesla.describe_battery()
+# my_tesla.fill_gas_tank() # Перевірка методу.
+
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
