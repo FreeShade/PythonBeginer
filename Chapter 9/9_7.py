@@ -1,61 +1,64 @@
-# Візочок з морозивом.
-# Напишіть клас IceCreamStand , що наслідує клас Restaraunt
+# Адміністратор - це особливий користувач.
+# Визначте клас User, дайте йому атрибути
 
 
-# Почніть з коду 9_1
-class Restaraunt:
-    """Моделюємо ресторан"""
+class User:
+    """Моделюємо користувача"""
 
-    def __init__(self, restaraunt_name, cuisine_type):
-        """Ініцібвати атрибути назва та тип кухні."""
-        self.restaraunt_name = restaraunt_name
-        self.cuisine_type = cuisine_type
-        self.number_serve = 0
+    def __init__(self, first_name, last_name, age, location, gender):
+        """Ініцібвати атрибути користувача."""
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.location = location
+        self.gender = gender
 
-    def describe_restaraunt(self):
-        """Описує ресторан"""
-        print(f"A Restaraunt name is {self.restaraunt_name}.")
-        print(f"THe restaraunt cuisine is {self.cuisine_type}.")
+    def describe_user(self):
+        """Описує користувача"""
+        full_name = f"{self.first_name.title()} {self.last_name.title()}"
+        print(f"\nUser`s name is {full_name}")
+        print(
+            f"{self.gender.title()} is {self.age} years old and live in {self.location.title()}."
+        )
 
-    def open_restaraunt(self):
-        """Повідомляє що заклад працює"""
-        print(f"{self.restaraunt_name.title()} is open now.")
-
-    def set_number_severed(self):
-        """Встановлює кількість клієнтів і виводить його."""
-        print(f"There are : {self.number_serve} clients.")
-
-    def incrment_number_severed(self, clients):
-        """Дозволяє змінити кількість клієгтів."""
-        self.number_serve += clients
+    def greet_user(self):
+        """Вітає користувача"""
+        full_name = f"{self.first_name.title()} {self.last_name.title()}"
+        print(f"Greetings, {full_name}.")
 
 
-class IceCreamStand(Restaraunt):
+# Admin can: 'ban user', 'can add post',
+class Admin(User):
     """
-    Наслідує клас Restaraunt,
-    моделюємо властивості морозива
-    чи чогось подібного.
+    Особливий користувач , може банити, постити, видаляти
     """
 
-    def __init__(self, restaraunt_name, cuisine_types, favours):
-        super().__init__(restaraunt_name, cuisine_types)
-        self.favours = favours
-        self.IceCreamStand()
+    def __init__(self, first_name, last_name, age, location, gender):
+        super().__init__(first_name, last_name, age, location, gender)
+        self.privileges = privileges
 
-    def IceCreamStand(self):
-        """Відображатиме список наповнювачів."""
-        print(f"There are a list of favours: {self.favours}")
-
-
-favours = ["cherry", "vanila", "strawberry", "blackberry"]
-# Екземпляр класу
-rest = IceCreamStand("Ice World", "Sweets", favours)
-rest.IceCreamStand()
-rest.describe_restaraunt()
+    def show_privileges(self):
+        full_name = f"{self.first_name.title()} {self.last_name.title()}"
+        print(f"{full_name} can: {privileges}")
 
 
-# Все що заявлено виводить, криво , бо легасі код це ще та дрянь
-# Спробую в чати GPT перевірити.
-# зробив пару незначних помилок
-# print(rest.describe_restaraunt())
-# rest.IceCreamStand()  # виправлено цей рядок
+privileges = ["can add post", "can delete post", "can ban user"]
+# Створюємо екземрляри класу
+user_0 = User("oleksander", "pustovoi", 32, "ukraine", "he")
+user_1 = User("miroslava", "pustova", 30, "ukraine", "shee")
+user_2 = User("takeuchi", "miamoto", 67, "japan", "he")
+admin_user = Admin("axel", "suter", 77, "haven", "he")
+
+# Викликаємо методи екземплярів
+user_0.describe_user()
+user_0.greet_user()
+
+user_1.describe_user()
+user_1.greet_user()
+
+user_2.describe_user()
+user_2.greet_user()
+
+admin_user.describe_user()
+admin_user.greet_user()
+admin_user.show_privileges()
