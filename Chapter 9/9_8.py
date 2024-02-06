@@ -67,3 +67,6 @@ user_2.greet_user()
 admin_user.describe_user()
 admin_user.greet_user()
 admin_user.show_privileges()
+
+
+# Ну воно працює. Задачу виконує , і походу навіть робить це по ТЗ.
