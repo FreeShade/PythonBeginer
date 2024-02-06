@@ -38,19 +38,21 @@ class Admin(User):
         super().__init__(first_name, last_name, age, location, gender)
         self.privileges = privileges
 
+
+class Privileges(Admin):
+    """Моделюємо привілегії."""
+
     def show_privileges(self):
         full_name = f"{self.first_name.title()} {self.last_name.title()}"
         print(f"{full_name} can: {privileges}")
 
 
 privileges = ["can add post", "can delete post", "can ban user"]
-
-
 # Створюємо екземрляри класу
 user_0 = User("oleksander", "pustovoi", 32, "ukraine", "he")
 user_1 = User("miroslava", "pustova", 30, "ukraine", "shee")
 user_2 = User("takeuchi", "miamoto", 67, "japan", "he")
-admin_user = Admin("axel", "suter", 77, "haven", "he")
+admin_user = Privileges("axel", "suter", 77, "haven", "he")
 
 # Викликаємо методи екземплярів
 user_0.describe_user()
