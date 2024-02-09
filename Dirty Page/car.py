@@ -50,34 +50,10 @@ class ElectricCar(Car):
         self.battery = Battery
 
 
-# class Battery:
-#     """Проста спроба змоделювати акумулятор електрокара."""
-
-#     def __init__(self, battery_size=70):
-#         """Ініціалізувати атрибут акумулятора."""
-#         self.battery_size = battery_size
-
-#     def describe_battery(self):
-#         """Вивести повідомлення про розмір акумулятора."""
-#         print(f"This car has a {self.battery_size} - kWh battery.")
-
-#     def get_range(self):
-#         """
-#         Вивести повідомлення про відстань,
-#         яку може подолати авто
-#         відповідно до ємності акумулятора.
-#         """
-#         if self.battery_size == 75:
-#             range = 260
-#         elif self.battery_size == 100:
-#             range = 315
-
-
-#         print(f"This car can go about {range} miles on full charge.")
 class Battery:
     """Проста спроба змоделювати акумулятор електрокара."""
 
-    def __init__(self, battery_size=70):
+    def __init__(self, battery_size=75):
         """Ініціалізувати атрибут акумулятора."""
         self.battery_size = battery_size
 
@@ -91,9 +67,9 @@ class Battery:
         яку може подолати авто
         відповідно до ємності акумулятора.
         """
-        if self.battery_size == 70:
-            range_miles = 260
+        if self.battery_size == 75:
+            range = 260
         elif self.battery_size == 100:
-            range_miles = 315
+            range = 315
 
-        print(f"This car can go about {range_miles} miles on full charge.")
+        print(f"This car can go about {range} miles on full charge.")
