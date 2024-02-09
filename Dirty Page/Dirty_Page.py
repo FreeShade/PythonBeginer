@@ -1333,3 +1333,6 @@ class Car:
 
     def increment_odometer(self, miles):
         self.odometer_reading += miles
+
+
+# Збереження кількох класів в одному модулі (car.py)
