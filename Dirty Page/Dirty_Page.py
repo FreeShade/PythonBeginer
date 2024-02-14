@@ -1350,4 +1350,6 @@
 # Використання псевдонімів
 from electric_car import ElectricCar as EC
 
-my_tesla = EC('tesla', 'roadster', 2019)
+my_tesla = EC("tesla", "roadster", 2019)
+
+# Наступний крок 3 задачки.
