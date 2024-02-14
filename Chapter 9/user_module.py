@@ -1,6 +1,3 @@
-privileges = ["can add post", "can delete post", "can ban user"]
-
-
 class User:
     """Моделюємо користувача"""
 
@@ -45,6 +42,7 @@ class Privileges(Admin):
         print(f"{full_name} can: {privileges}")
 
 
+privileges = ["can add post", "can delete post", "can ban user"]
 user_0 = User("oleksander", "pustovoi", 32, "ukraine", "he")
 user_1 = User("miroslava", "pustova", 30, "ukraine", "shee")
 user_2 = User("takeuchi", "miamoto", 67, "japan", "he")
