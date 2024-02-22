@@ -1412,15 +1412,36 @@
 #     print(line.rstrip())
 
 # Робота з вмістом файлу
-file_name = r"Dirty Page\pi_d.txt"
+# file_name = r"Dirty Page\pi_d.txt"
 
-with open(file_name) as file_object:
+# with open(file_name) as file_object:
+#     lines = file_object.readlines()
+
+# pi_string = ""
+# for line in lines:
+#     # pi_string += line.rstrip()
+#     pi_string += line.strip()
+
+# print(pi_string)
+# print(len(pi_string))
+
+
+# Великі файли: мільйон цифр
+
+filename = r"Dirty Page\pi_d.txt"
+
+with open(filename) as file_object:
     lines = file_object.readlines()
 
 pi_string = ""
 for line in lines:
-    # pi_string += line.rstrip()
     pi_string += line.strip()
 
-print(pi_string)
-print(len(pi_string))
+# print(f"{pi_string[:52]}")
+# print(len(pi_string))
+
+birthday = input("Enter your birthday, in the for mmddyy: ")
+if birthday in pi_string:
+    print("Your birthday appers in the first million digits of pi!")
+else:
+    print("Your birthday does not appers in the first million digits of pi.")
