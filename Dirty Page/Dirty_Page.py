@@ -1403,10 +1403,24 @@
 
 # Створення списку рядків на базі файлу
 
+# file_name = r"Dirty Page\pi_d.txt"
+
+# with open(file_name) as file_object:
+#     lines = file_object.readlines()
+
+# for line in lines:
+#     print(line.rstrip())
+
+# Робота з вмістом файлу
 file_name = r"Dirty Page\pi_d.txt"
 
 with open(file_name) as file_object:
     lines = file_object.readlines()
 
+pi_string = ""
 for line in lines:
-    print(line.rstrip())
+    # pi_string += line.rstrip()
+    pi_string += line.strip()
+
+print(pi_string)
+print(len(pi_string))
