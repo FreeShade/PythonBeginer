@@ -1392,3 +1392,21 @@
 
 
 # Зчитування рядок за рядком.
+
+# filename = r"Dirty Page\pi_d.txt"
+
+# with open(filename) as file_object:
+#     for line in file_object:
+#         # print(line)
+#         print(line.rstrip())
+
+
+# Створення списку рядків на базі файлу
+
+file_name = r"Dirty Page\pi_d.txt"
+
+with open(file_name) as file_object:
+    lines = file_object.readlines()
+
+for line in lines:
+    print(line.rstrip())
