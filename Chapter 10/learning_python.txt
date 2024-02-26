@@ -1,4 +1,4 @@
-In Python you can do somethin important.
-In Python you can do somethin not important.
-In Python you can do everithin in your mind.
-In Python you can write your own destiny.
+In python you can do somethin important.
+In python you can do somethin not important.
+In python you can do everithin in your mind.
+In python you can write your own destiny.
