@@ -1428,20 +1428,27 @@
 
 # Великі файли: мільйон цифр
 
-filename = r"Dirty Page\pi_d.txt"
+# filename = r"Dirty Page\pi_d.txt"
 
-with open(filename) as file_object:
-    lines = file_object.readlines()
+# with open(filename) as file_object:
+#     lines = file_object.readlines()
 
-pi_string = ""
-for line in lines:
-    pi_string += line.strip()
+# pi_string = ""
+# for line in lines:
+#     pi_string += line.strip()
 
-# print(f"{pi_string[:52]}")
-# print(len(pi_string))
+# # print(f"{pi_string[:52]}")
+# # print(len(pi_string))
 
-birthday = input("Enter your birthday, in the for mmddyy: ")
-if birthday in pi_string:
-    print("Your birthday appers in the first million digits of pi!")
-else:
-    print("Your birthday does not appers in the first million digits of pi.")
+# birthday = input("Enter your birthday, in the for mmddyy: ")
+# if birthday in pi_string:
+#     print("Your birthday appers in the first million digits of pi!")
+# else:
+#     print("Your birthday does not appers in the first million digits of pi.")
+
+# Запис у файл
+
+filename = "programing.txt"
+
+with open(filename, "w") as file:
+    file.write("I love programing")
