@@ -1451,5 +1451,5 @@
 filename = "programing.txt"
 
 with open(filename, "w") as file:
-    file.write("I love programing.")
-    file.write("I love creating new games.")
+    file.write("I love programing.\n")
+    file.write("I love creating new games.\n")
