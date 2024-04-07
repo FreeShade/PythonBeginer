@@ -1465,3 +1465,12 @@
 
 
 #07.04.2024
+
+#ZeroDivisionError
+#print(5/0)
+
+#спробуємо обробити помилку в коді
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("You shell not divide by zero!")
