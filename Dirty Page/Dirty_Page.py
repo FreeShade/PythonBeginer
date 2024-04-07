@@ -1492,3 +1492,26 @@ while True:
     print(f"The answer are : {answer}")
     
 #ділити на 0 не вийде.
+
+
+#Створимо простий калькулятор який вміє виключно ділити в тому числі не париться через 0.
+
+print("Give me two numbers, and I'll divide them.")
+print("Enter 'q' for quit.")
+
+while True:
+    first_number = input("\nFirst number: ")
+    if first_number == "q":
+        break
+    second_number = input("Second number: ")    
+    if second_number == "q": 
+        break
+    
+    try:
+        answer = int(first_number) / int(second_number)
+    except ZeroDivisionError:
+        print("You shell not divide by 0!")
+    else:    
+        print(f"The answer are : {answer}")
+    
+    
