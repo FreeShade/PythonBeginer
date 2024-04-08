@@ -1514,4 +1514,34 @@ while True:
     else:    
         print(f"The answer are : {answer}")
     
-    
+#трохи косяки з шляхом на пленшеті але думаю це через конфлікт з форматом , гадаю на комп'ютері все буде тіп топ    
+filename = "/storage/emulated/0/Download/CodingPython/pd.txt"
+
+try:
+    with open(filename) as f :
+        contents =f.read()
+except FileNotFoundError:
+    print(f"Sorry, the file {filename} does not exist.")
+else:
+    #Порахувати кіл кість слів у файлі
+    words = contents.split()    
+    num_words = len(words)
+    print(f"The file {filename} has about {num_words} words.")
+
+#додам зразу версію у вигляді функції яку можна використовувати як модуль.
+
+def count_words(filepath):
+    try:
+        with open(filename) as f :
+            contents =f.read()
+    except FileNotFoundError:
+        print(f"Sorry, the file {filename} does not exist.")
+    else:
+        #Порахувати кіл кість слів у файлі
+        words = contents.split()    
+        num_words = len(words)
+        print(f"The file {filename} has about {num_words} words.")
+
+filepath = 'alice.txt'
+num_words(filepath)
+        
