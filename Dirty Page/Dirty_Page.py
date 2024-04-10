@@ -1463,5 +1463,90 @@
 #     file.write("I also love finding meaning in large dataset. \n")
 #     file.write("I love creating apps that can run in browser. \n")
 
+<<<<<<< HEAD
 # *a, b, c = [1, 2, 3, 4, 5]
 # print(a, b, c)
+=======
+
+#07.04.2024
+
+#ZeroDivisionError
+#print(5/0)
+
+#спробуємо обробити помилку в коді
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("You shell not divide by zero!")
+
+#Створимо простий калькулятор який вміє виключно ділити.
+
+print("Give me two numbers, and I'll divide them.")
+print("Enter 'q' for quit.")
+
+while True:
+    first_number = input("\nFirst number: ")
+    if first_number == "q":
+        break
+    second_number = input("Second number: ")    
+    if second_number == "q": 
+        break
+    answer = int(first_number) / int(second_number)
+    
+    print(f"The answer are : {answer}")
+    
+#ділити на 0 не вийде.
+
+
+#Створимо простий калькулятор який вміє виключно ділити в тому числі не париться через 0.
+
+print("Give me two numbers, and I'll divide them.")
+print("Enter 'q' for quit.")
+
+while True:
+    first_number = input("\nFirst number: ")
+    if first_number == "q":
+        break
+    second_number = input("Second number: ")    
+    if second_number == "q": 
+        break
+    
+    try:
+        answer = int(first_number) / int(second_number)
+    except ZeroDivisionError:
+        print("You shell not divide by 0!")
+    else:    
+        print(f"The answer are : {answer}")
+    
+#трохи косяки з шляхом на пленшеті але думаю це через конфлікт з форматом , гадаю на комп'ютері все буде тіп топ    
+filename = "/storage/emulated/0/Download/CodingPython/pd.txt"
+
+try:
+    with open(filename) as f :
+        contents =f.read()
+except FileNotFoundError:
+    print(f"Sorry, the file {filename} does not exist.")
+else:
+    #Порахувати кіл кість слів у файлі
+    words = contents.split()    
+    num_words = len(words)
+    print(f"The file {filename} has about {num_words} words.")
+
+#додам зразу версію у вигляді функції яку можна використовувати як модуль.
+
+def count_words(filepath):
+    try:
+        with open(filename) as f :
+            contents =f.read()
+    except FileNotFoundError:
+        print(f"Sorry, the file {filename} does not exist.")
+    else:
+        #Порахувати кіл кість слів у файлі
+        words = contents.split()    
+        num_words = len(words)
+        print(f"The file {filename} has about {num_words} words.")
+
+filepath = 'alice.txt'
+num_words(filepath)
+        
+>>>>>>> c487e01cd9e99ec8d88115d50cc6993b57dee42b
