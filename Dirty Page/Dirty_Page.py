@@ -1462,3 +1462,6 @@
 # with open(filename, "a") as file:
 #     file.write("I also love finding meaning in large dataset. \n")
 #     file.write("I love creating apps that can run in browser. \n")
+
+# *a, b, c = [1, 2, 3, 4, 5]
+# print(a, b, c)
