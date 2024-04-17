@@ -1548,3 +1548,6 @@
 
 # filepath = 'alice.txt'
 # num_words(filepath)
+
+
+# сьогодні бухаю
