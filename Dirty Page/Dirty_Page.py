@@ -1553,18 +1553,18 @@
 # сьогодні бухаю
 
 
-import json
+# import json
 
-# Завантажити ім'я користувача, якщо воно вже було збережене.
-# В іншому разі запитайте ім'я кристувача та збережіть його.
-filename = 'username.json'
-try:
-    with open(filename) as f:
-        username = json.load(f)
-except FileNotFoundError:
-    username = input("What is yor name? ")
-    with open(filename, 'w') as f:
-        json.dump(username, f)
-        print(f"We`ll remember you when you come back, {username}!")
-else:
-    print(f"Welcome back, {username}!")
+# # Завантажити ім'я користувача, якщо воно вже було збережене.
+# # В іншому разі запитайте ім'я кристувача та збережіть його.
+# filename = 'username.json'
+# try:
+#     with open(filename) as f:
+#         username = json.load(f)
+# except FileNotFoundError:
+#     username = input("What is yor name? ")
+#     with open(filename, 'w') as f:
+#         json.dump(username, f)
+#         print(f"We`ll remember you when you come back, {username}!")
+# else:
+#     print(f"Welcome back, {username}!")
